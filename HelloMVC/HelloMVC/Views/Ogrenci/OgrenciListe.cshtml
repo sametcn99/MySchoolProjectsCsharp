@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "OgrenciListe";
+    ViewData["Desc"] = "Berk";
+}
+
+<h1>Öğrenci Listesi</h1>
+
+<table class="table table-striped table-hover
+">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Numara</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@ViewData["Ad"]</td>
+            <td>@ViewData["Soyad"]</td>
+            <td>@ViewData["Numara"]</td>
+        </tr>
+        <tr>
+            <td>@ViewData["Ad1"]</td>
+            <td>@ViewData["Soyad1"]</td>
+            <td>@ViewData["Numara1"]</td>
+        </tr>
+        <tr>
+            <td>@ViewData["Ad2"]</td>
+            <td>@ViewData["Soyad2"]</td>
+            <td>@ViewData["Numara2"]</td>
+        </tr>
+        <label>Ogrenci</label>
+        <p>@ViewBag.Ad2</p>
+        <p>@ViewBag.Soyad2</p>
+        <p>@ViewBag.Numara2</p>
+
+    </tbody>
+</table>
+

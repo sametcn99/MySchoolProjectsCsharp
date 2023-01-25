@@ -1,0 +1,15 @@
+﻿
+@model Ogrenci
+@{
+    ViewData["Title"] = "OgrenciEkle";
+}
+
+<h1>Ogrenci Ekleme İşlemi</h1>
+<form action="/Ogrenci/OgrenciEkle" method="post">
+    <label>Öğrenci Adı:</label>
+    <input type="text" name="Ad" value="Ad" />
+    <label>Soyadı:</label>
+    <input type="text" name="Soyad" value="Soyad" />
+    <input type="button" name="kayit" value="Kaydet" />
+</form>
+

@@ -1,0 +1,28 @@
+﻿/* Set the background color of body to tan */
+body {
+    background-color: aquamarine;
+}
+#container{
+    margin: auto;
+    width: 820px;
+}
+
+#container div{
+    height: 200px;
+    background-color: lawngreen;
+    border:1px solid black;
+    float: left;
+}
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: olive;
+    }
+}
