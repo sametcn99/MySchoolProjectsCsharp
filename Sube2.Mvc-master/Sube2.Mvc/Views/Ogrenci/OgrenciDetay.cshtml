@@ -1,0 +1,39 @@
+﻿@model Sube2.Mvc.Models.Ogrenci
+
+@{
+    ViewData["Title"] = "OgrenciDetay";
+}
+
+<h1>OgrenciDetay</h1>
+
+<div>
+    <h4>Ogrenci</h4>
+    <hr />
+    <form asp-action="OgrenciDetay" asp-controller="Ogrenci" method="post">
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Ad)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.TextBoxFor(model => model.Ad)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Soyad)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.TextBoxFor(model => model.Soyad)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Numara)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.TextBoxFor(model => model.Numara)
+            </dd>
+        </dl>
+        <input type="submit" value="Kaydet" class="btn btn-outline-success" />
+        @Html.HiddenFor(o=>o.Ogrenciid)
+    </form>
+</div>
+<div>    |
+    <a asp-action="OgrenciListe" asp-controller="Ogrenci">Back to List</a>
+</div>
